@@ -48,13 +48,30 @@
             android:layout_weight="1"
             android:gravity="center">
 
-            <ImageView
-                android:id="@+id/circle_2"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:layout_centerHorizontal="true"
-                android:src="@drawable/circle_2"
-                android:layout_gravity="top"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/circle_2"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/circle_2"
+                    android:layout_gravity="top"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/lines"
+                    android:layout_below="@id/circle_2"
+                    android:layout_centerHorizontal="true">
+
+                </View>
+
+            </RelativeLayout>
+
+
 
         </LinearLayout>
 
