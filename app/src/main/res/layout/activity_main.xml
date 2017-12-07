@@ -16,6 +16,9 @@
         android:text="Season 0"
         android:layout_margin="8dp"/>
 
+    <!--This Layout nest countains the quddich circles, whit the point each team has,
+    and in the middle we can see the ply count
+    (how meny games have been playd in the giving season)-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -56,21 +59,20 @@
                     android:id="@+id/circle_2"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
+                    android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/circle_2"
-                    android:layout_gravity="top"/>
+                    android:layout_gravity="top"
+                    android:src="@drawable/circle_2" />
 
                 <View
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
-                    android:background="@color/lines"
                     android:layout_below="@id/circle_2"
-                    android:layout_centerHorizontal="true">
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/lines">
 
                 </View>
-
             </RelativeLayout>
-
         </LinearLayout>
 
         <LinearLayout
@@ -88,9 +90,10 @@
                 android:layout_gravity="bottom"
                 android:src="@drawable/circle_3" />
             </LinearLayout>
-
     </LinearLayout>
 
+    <!--This is the Layout nest witch countains the clickable
+    balls and the separator lines-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -102,41 +105,60 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/quaffle"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="50dp"/>
 
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/lines"></View>
-
+                android:background="@color/lines">
+            </View>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:src="@drawable/snitch" />
 
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/lines"></View>
-
+                android:background="@color/lines">
+            </View>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/quaffle"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="50dp"/>
 
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/lines"></View>
-
+                android:background="@color/lines">
+            </View>
         </LinearLayout>
-
     </LinearLayout>
 
     <LinearLayout
