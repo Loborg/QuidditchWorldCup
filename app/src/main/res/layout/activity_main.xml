@@ -37,7 +37,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
                 android:layout_gravity="bottom"
-                android:src="@drawable/circle_1_2" />
+                android:src="@drawable/circle_1" />
 
         </LinearLayout>
 
@@ -57,7 +57,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/circle_2_2"
+                    android:src="@drawable/circle_2"
                     android:layout_gravity="top"/>
 
                 <View
@@ -86,7 +86,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
                 android:layout_gravity="bottom"
-                android:src="@drawable/circle_3_2" />
+                android:src="@drawable/circle_3" />
             </LinearLayout>
 
     </LinearLayout>
