@@ -19,6 +19,9 @@
             android:id="@+id/season_counter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_weight="1" />
     </LinearLayout>
 
@@ -26,7 +29,7 @@
         android:id="@+id/circle_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="2"
+        android:layout_weight="3"
         android:orientation="horizontal">
 
         <RelativeLayout
@@ -36,9 +39,11 @@
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/imageView8"
+                android:id="@+id/circle_left"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
                 app:srcCompat="@drawable/circle_1" />
         </RelativeLayout>
 
@@ -52,10 +57,20 @@
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/imageView9"
+                android:id="@+id/circle_middle"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
                 app:srcCompat="@drawable/circle_2" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/circle_middle"
+                android:layout_centerHorizontal="true"
+                android:background="@color/lines" />
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -65,9 +80,11 @@
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/imageView10"
+                android:id="@+id/circle_right"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
                 app:srcCompat="@drawable/circle_3" />
         </RelativeLayout>
     </LinearLayout>
@@ -76,55 +93,69 @@
         android:id="@+id/snech_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="2"
+        android:layout_weight="3"
         android:orientation="horizontal">
 
-        <RelativeLayout
-            android:id="@+id/filler1"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal"></LinearLayout>
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/snitch_countainer_layout"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/snitchA"
-                android:layout_width="64dp"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/snitch" />
-
-            <ImageView
-                android:id="@+id/snitchB"
-                android:layout_width="64dp"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/snitch" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/filler2"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal"></LinearLayout>
 
-        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"></LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/ball_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:orientation="horizontal">
 
         <RelativeLayout
@@ -137,6 +168,8 @@
                 android:id="@+id/quaffleA"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 app:srcCompat="@drawable/quaffle" />
         </RelativeLayout>
 
@@ -145,7 +178,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/lines"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
 
         <RelativeLayout
             android:id="@+id/quaffleB_layout"
@@ -157,6 +198,8 @@
                 android:id="@+id/quaffleB"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 app:srcCompat="@drawable/quaffle" />
         </RelativeLayout>
     </LinearLayout>
@@ -165,7 +208,7 @@
         android:id="@+id/reset_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="2"
+        android:layout_weight="3"
         android:orientation="horizontal">
 
         <Button
