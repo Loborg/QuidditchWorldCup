@@ -19,10 +19,9 @@
             android:id="@+id/season_counter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:text="@string/season_counter_text"
+            android:gravity="center"/>
     </LinearLayout>
 
     <LinearLayout
@@ -38,6 +37,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/circle_left"
+                android:layout_centerHorizontal="true"
+                android:background="@color/lines" />
+
             <ImageView
                 android:id="@+id/circle_left"
                 android:layout_width="64dp"
@@ -45,6 +51,21 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 app:srcCompat="@drawable/circle_1" />
+
+            <TextView
+                android:id="@+id/pointsA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/win_countA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/circle_left"
+                android:layout_centerHorizontal="true"
+                android:text="" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -64,7 +85,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:paddingRight="10dp"
-                app:srcCompat="@drawable/snitch" />
+                app:srcCompat="@drawable/snitch"
+                android:onClick="snichA_clicked"/>
 
             <ImageView
                 android:id="@+id/snichB"
@@ -74,13 +96,13 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:paddingLeft="10dp"
-                app:srcCompat="@drawable/snitch" />
+                app:srcCompat="@drawable/snitch"
+                android:onClick="snichB_clicked"/>
 
             <ImageView
                 android:id="@+id/circle_middle"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
-                android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 app:srcCompat="@drawable/circle_2" />
 
@@ -92,13 +114,32 @@
                 android:background="@color/lines"
                 android:id="@+id/view" />
 
+            <TextView
+                android:id="@+id/gameInSeason_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/view"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" />
+
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/circle3_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:layout_weight="1">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/circle_right"
+                android:layout_centerHorizontal="true"
+                android:background="@color/lines" />
 
             <ImageView
                 android:id="@+id/circle_right"
@@ -107,6 +148,21 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 app:srcCompat="@drawable/circle_3" />
+
+            <TextView
+                android:id="@+id/pointsB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/win_countB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/circle_right"
+                android:layout_centerHorizontal="true"
+                android:text="" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -123,13 +179,22 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/lines" />
+
             <ImageView
                 android:id="@+id/quaffleA"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                app:srcCompat="@drawable/quaffle" />
+                app:srcCompat="@drawable/quaffle"
+                android:onClick="quaffleA_clicked"/>
+
         </RelativeLayout>
 
         <LinearLayout
@@ -153,13 +218,21 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/lines" />
+
             <ImageView
                 android:id="@+id/quaffleB"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                app:srcCompat="@drawable/quaffle" />
+                app:srcCompat="@drawable/quaffle"
+                android:onClick="quaffleB_clicked"/>
         </RelativeLayout>
     </LinearLayout>
 
@@ -168,12 +241,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="3"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <Button
+            android:id="@+id/new_season"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_gravity="center_horizontal"
+            android:text="@string/reset_button_text"
+            android:onClick="newSeason_button_clicked"/>
+
+        <TextView
+            android:id="@+id/wining_messageA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:text="@string/teamA_winning_message"/>
+
+        <TextView
+            android:id="@+id/wining_messageB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:text="@string/teamB_winning_message"/>
     </LinearLayout>
 
 </LinearLayout>
