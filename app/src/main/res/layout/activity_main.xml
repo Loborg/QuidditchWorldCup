@@ -29,7 +29,7 @@
         android:id="@+id/circle_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="3"
+        android:layout_weight="2"
         android:orientation="horizontal">
 
         <RelativeLayout
@@ -42,8 +42,8 @@
                 android:id="@+id/circle_left"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
-                android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 app:srcCompat="@drawable/circle_1" />
         </RelativeLayout>
 
@@ -55,6 +55,26 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/snichA"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingRight="10dp"
+                app:srcCompat="@drawable/snitch" />
+
+            <ImageView
+                android:id="@+id/snichB"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="10dp"
+                app:srcCompat="@drawable/snitch" />
 
             <ImageView
                 android:id="@+id/circle_middle"
@@ -69,7 +89,8 @@
                 android:layout_height="match_parent"
                 android:layout_below="@+id/circle_middle"
                 android:layout_centerHorizontal="true"
-                android:background="@color/lines" />
+                android:background="@color/lines"
+                android:id="@+id/view" />
 
         </RelativeLayout>
 
@@ -83,72 +104,10 @@
                 android:id="@+id/circle_right"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
-                android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 app:srcCompat="@drawable/circle_3" />
         </RelativeLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/snech_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="3"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -166,8 +125,8 @@
 
             <ImageView
                 android:id="@+id/quaffleA"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 app:srcCompat="@drawable/quaffle" />
@@ -196,8 +155,8 @@
 
             <ImageView
                 android:id="@+id/quaffleB"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 app:srcCompat="@drawable/quaffle" />
