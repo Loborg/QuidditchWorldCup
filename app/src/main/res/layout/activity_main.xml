@@ -60,7 +60,7 @@
                 android:layout_centerVertical="true" />
 
             <TextView
-                android:id="@+id/win_countA"
+                android:id="@+id/win_countA_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_above="@+id/circle_left"
@@ -157,7 +157,7 @@
                 android:layout_centerVertical="true" />
 
             <TextView
-                android:id="@+id/win_countB"
+                android:id="@+id/win_countB_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_above="@id/circle_right"
@@ -266,6 +266,14 @@
             android:layout_gravity="center_horizontal"
             android:visibility="gone"
             android:text="@string/teamB_winning_message"/>
+
+        <TextView
+            android:id="@+id/already_win_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_win_message"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"/>
     </LinearLayout>
 
 </LinearLayout>
