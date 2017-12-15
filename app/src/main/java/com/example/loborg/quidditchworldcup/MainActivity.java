@@ -8,9 +8,21 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    public TextView win_countA_text, win_countB_text, season_counter_text, gameInSeason_counter_text, pointsA_text, pointsB_text, winning_messageA, winning_messageB, already_win_message;
+    public TextView win_countA_text;
+    public TextView win_countB_text;
+    public TextView season_counter_text;
+    public TextView gameInSeason_counter_text;
+    public TextView pointsA_text, pointsB_text;
+    public TextView winning_messageA;
+    public TextView winning_messageB;
+    public TextView already_win_message;
 
-    public Integer pointsA = 0, pointsB = 0, win_countA, win_countB, season_count, gameInSeason_counter;
+    public Integer pointsA = 0;
+    public Integer pointsB = 0;
+    public Integer win_countA;
+    public Integer win_countB;
+    public Integer season_count;
+    public Integer gameInSeason_counter;
 
     public boolean snich_pressed = false;
 
