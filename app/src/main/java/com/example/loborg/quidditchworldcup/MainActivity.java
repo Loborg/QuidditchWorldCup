@@ -39,11 +39,11 @@ public class MainActivity extends AppCompatActivity {
         pointsB_text = findViewById(R.id.pointsB);
         pointsB_text.setText("");
 
-        win_countA_text = findViewById(R.id.win_countA_text);
+        win_countA_text = findViewById(R.id.win_countA);
         win_countA = 0;
         win_countA_text.setText(win_countA.toString());
 
-        win_countB_text = findViewById(R.id.win_countB_text);
+        win_countB_text = findViewById(R.id.win_countB);
         win_countB = 0;
         win_countB_text.setText(win_countB.toString());
 
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
         pointsB_text.setText("");
         win_countA = 0;
         win_countA_text.setText(win_countA.toString());
-        win_countB_text = findViewById(R.id.win_countB_text);
+        win_countB_text = findViewById(R.id.win_countB);
         win_countB = 0;
         win_countB_text.setText(win_countB.toString());
         gameInSeason_counter = 1;
