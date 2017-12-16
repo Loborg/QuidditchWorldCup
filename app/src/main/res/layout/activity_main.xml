@@ -5,6 +5,8 @@
     android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_01"
+
     android:orientation="vertical"
     tools:context="com.example.loborg.quidditchworldcup.MainActivity">
 
@@ -20,8 +22,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/season_counter_text"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="@string/season_counter_text" />
     </LinearLayout>
 
     <LinearLayout
@@ -84,9 +86,9 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
+                android:onClick="snichA_clicked"
                 android:paddingRight="10dp"
-                app:srcCompat="@drawable/snitch"
-                android:onClick="snichA_clicked"/>
+                app:srcCompat="@drawable/snitch" />
 
             <ImageView
                 android:id="@+id/snichB"
@@ -95,9 +97,9 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
+                android:onClick="snichB_clicked"
                 android:paddingLeft="10dp"
-                app:srcCompat="@drawable/snitch"
-                android:onClick="snichB_clicked"/>
+                app:srcCompat="@drawable/snitch" />
 
             <ImageView
                 android:id="@+id/circle_middle"
@@ -107,12 +109,12 @@
                 app:srcCompat="@drawable/circle_2" />
 
             <View
+                android:id="@+id/view"
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
                 android:layout_below="@+id/circle_middle"
                 android:layout_centerHorizontal="true"
-                android:background="@color/lines"
-                android:id="@+id/view" />
+                android:background="@color/lines" />
 
             <TextView
                 android:id="@+id/gameInSeason_counter"
@@ -192,8 +194,8 @@
                 android:layout_height="72dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                app:srcCompat="@drawable/quaffle"
-                android:onClick="quaffleA_clicked"/>
+                android:onClick="quaffleA_clicked"
+                app:srcCompat="@drawable/quaffle" />
 
         </RelativeLayout>
 
@@ -207,8 +209,8 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/lines"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:background="@color/lines" />
 
         </LinearLayout>
 
@@ -231,8 +233,8 @@
                 android:layout_height="72dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                app:srcCompat="@drawable/quaffle"
-                android:onClick="quaffleB_clicked"/>
+                android:onClick="quaffleB_clicked"
+                app:srcCompat="@drawable/quaffle" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -248,24 +250,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="@string/reset_button_text"
-            android:onClick="newSeason_button_clicked"/>
+            android:onClick="newSeason_button_clicked"
+            android:text="@string/reset_button_text" />
 
         <TextView
             android:id="@+id/wining_messageA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:visibility="gone"
-            android:text="@string/teamA_winning_message"/>
+            android:text="@string/teamA_winning_message"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/wining_messageB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:visibility="gone"
-            android:text="@string/teamB_winning_message"/>
+            android:text="@string/teamB_winning_message"
+            android:visibility="gone" />
     </LinearLayout>
 
 </LinearLayout>
