@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     
     <color name="lines">#000000</color>
+    <color name="feedback_text_color">#FFFFFF</color>
 </resources>

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.loborg.quidditchworldcup.MainActicity_Test"
-    android:background="@drawable/bg_02_2">
+    android:background="@drawable/bg_02_2_land">
 
     <LinearLayout
         android:id="@+id/season_layout"
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:textSize="@dimen/season_count_text_size" />
+            android:textSize="@dimen/season_count_text_size_land" />
     </LinearLayout>
 
     <LinearLayout
@@ -50,8 +50,8 @@
 
             <ImageView
                 android:id="@+id/circle_left"
-                android:layout_width="@dimen/circle_size"
-                android:layout_height="@dimen/circle_size"
+                android:layout_width="@dimen/circle_size_land"
+                android:layout_height="@dimen/circle_size_land"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 app:srcCompat="@drawable/circle_1" />
@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textSize="@dimen/points_count_text_size"
+                android:textSize="@dimen/points_count_text_size_land"
                 android:textStyle="bold"/>
 
             <TextView
@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_above="@+id/circle_left"
                 android:layout_centerHorizontal="true"
-                android:textSize="@dimen/wining_count_text_size"
+                android:textSize="@dimen/wining_count_text_size_land"
                 android:gravity="center_horizontal"/>
         </RelativeLayout>
 
@@ -108,8 +108,8 @@
 
             <ImageView
                 android:id="@+id/circle_middle"
-                android:layout_width="@dimen/circle_size"
-                android:layout_height="@dimen/circle_size"
+                android:layout_width="@dimen/circle_size_land"
+                android:layout_height="@dimen/circle_size_land"
                 android:layout_centerHorizontal="true"
                 app:srcCompat="@drawable/circle_2" />
 
@@ -129,7 +129,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
-                android:textSize="@dimen/game_count_text_size"/>
+                android:textSize="@dimen/game_count_text_size_land"/>
 
         </RelativeLayout>
 
@@ -151,8 +151,8 @@
 
             <ImageView
                 android:id="@+id/circle_right"
-                android:layout_width="@dimen/circle_size"
-                android:layout_height="@dimen/circle_size"
+                android:layout_width="@dimen/circle_size_land"
+                android:layout_height="@dimen/circle_size_land"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 app:srcCompat="@drawable/circle_3" />
@@ -163,7 +163,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:textSize="@dimen/points_count_text_size"
+                android:textSize="@dimen/points_count_text_size_land"
                 android:textStyle="bold"/>
 
             <TextView
@@ -172,7 +172,7 @@
                 android:layout_height="wrap_content"
                 android:layout_above="@id/circle_right"
                 android:layout_centerHorizontal="true"
-                android:textSize="@dimen/wining_count_text_size"
+                android:textSize="@dimen/wining_count_text_size_land"
                 android:gravity="center_horizontal"/>
         </RelativeLayout>
     </LinearLayout>
@@ -199,8 +199,8 @@
 
             <ImageView
                 android:id="@+id/quaffleA"
-                android:layout_width="@dimen/quaffle_size"
-                android:layout_height="@dimen/quaffle_size"
+                android:layout_width="@dimen/quaffle_size_land"
+                android:layout_height="@dimen/quaffle_size_land"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:onClick="quaffleA_clicked"
@@ -238,8 +238,8 @@
 
             <ImageView
                 android:id="@+id/quaffleB"
-                android:layout_width="@dimen/quaffle_size"
-                android:layout_height="@dimen/quaffle_size"
+                android:layout_width="@dimen/quaffle_size_land"
+                android:layout_height="@dimen/quaffle_size_land"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:onClick="quaffleB_clicked"
@@ -270,7 +270,7 @@
             android:text="@string/teamA_winning_message"
             android:visibility="gone"
             android:layout_marginBottom="@dimen/feedback_message_margin"
-            android:textColor="@color/feedback_text_color"/>
+            android:textSize="@dimen/feedback_massage_text_size_land"/>
 
         <TextView
             android:id="@+id/wining_messageB"
@@ -280,7 +280,7 @@
             android:layout_marginBottom="@dimen/feedback_message_margin"
             android:text="@string/teamB_winning_message"
             android:visibility="gone"
-            android:textColor="@color/feedback_text_color"/>
+            android:textSize="@dimen/feedback_massage_text_size_land"/>
 
         <TextView
             android:id="@+id/already_win_message"
@@ -289,8 +289,8 @@
             android:layout_gravity="center_horizontal"
             android:text="@string/already_win_message"
             android:visibility="gone"
-            android:layout_marginBottom="@dimen/feedback_message_margin"
-            android:textColor="@color/feedback_text_color"/>
+            android:layout_marginBottom="@dimen/feedback_message_margin_land"
+            android:textSize="@dimen/feedback_massage_text_size_land"/>
     </LinearLayout>
 
 </LinearLayout>

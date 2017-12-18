@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Quidditch World Cup</string>
-    <string name="season_counter_text">Season:</string>
+    <string name="season_counter_text">Season: </string>
     <string name="teamA_winning_message">Team A has wonn the Game</string>
     <string name="teamB_winning_message">Team B has wonn the Game</string>
     <string name="reset_button_text">New Season</string>
     <string name="already_win_message">You can’t catch the snich twice!</string>
+    <string name="gmae_count_text">Game:</string>
 </resources>

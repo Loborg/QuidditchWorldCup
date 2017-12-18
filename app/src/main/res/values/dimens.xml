@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="season_count_text_size">24sp</dimen>
+    <dimen name="game_count_text_size">16sp</dimen>
+    <dimen name="points_count_text_size">48sp</dimen>
+    <dimen name="wining_count_text_size">16sp</dimen>
+    <dimen name="circle_size">88dp</dimen>
+    <dimen name="snich_size">64dp</dimen>
+    <dimen name="quaffle_size">72dp</dimen>
+    <dimen name="snich_padding">10dp</dimen>
+    <dimen name="feedback_message_margin">8dp</dimen>
+
+    <dimen name="season_count_text_size_land">16sp</dimen>
+    <dimen name="game_count_text_size_land">10sp</dimen>
+    <dimen name="wining_count_text_size_land">10sp</dimen>
+    <dimen name="points_count_text_size_land">32sp</dimen>
+    <dimen name="circle_size_land">64dp</dimen>
+    <dimen name="quaffle_size_land">56dp</dimen>
+    <dimen name="feedback_message_margin_land">4dp</dimen>
+    <dimen name="feedback_massage_text_size_land">8dp</dimen>
+
+</resources>
