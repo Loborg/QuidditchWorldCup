@@ -21,9 +21,24 @@ import android.widget.TextView;
  * <li>The new Games session in the Season will start if one Team catches the first Quaffle</li>
  * <li>A new Season can be started if the New Season button is clicked.</li>
  * </ul>
+ * <p><b>Technical features:</b></p>
+ * <ul>
+ *     <li>The screen can be rotated to landscape mode and beck to vertical mode, and the data will preserved.</li>
+ *     <li>There is two layout xml, one fog the landscape mode, and one for the vertical mode.</li>
+ *     <li>The app will start whit some predefined date such as season count, game count and win count.</li>
+ * </ul>
+ * <p><b>Known issues:</b></p>
+ * <ul>
+ *     <li>The font type for the win counter is set to default because the font type I’m using is not to good,<br>
+ *     there is to much space between lines so in landscape mode the win counter text can move out of the screen.</li>
+ *     <li>In smaller screens, the win counter can disappear behind the circles.</li>
+ *     <li>In landscape mod the feedback message can be to small.</li>
+ *     <li>Because the snich color is yellow, sometimes it can be hard to see it on the screen.<br>
+ *     I can’t find a perfect background to solve the issue.</li>
+ * </ul>
  */
 
-public class MainActicity_Test extends AppCompatActivity {
+public class MainActicity extends AppCompatActivity {
 
     /**
      * Declaring the important global variables for the program

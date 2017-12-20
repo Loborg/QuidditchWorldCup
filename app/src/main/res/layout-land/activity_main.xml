@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.loborg.quidditchworldcup.MainActicity_Test"
+    tools:context="com.example.loborg.quidditchworldcup.MainActicity"
     android:background="@drawable/bg_02_2_land">
 
     <LinearLayout
