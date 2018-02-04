@@ -72,7 +72,8 @@
                 android:layout_above="@+id/circle_left"
                 android:layout_centerHorizontal="true"
                 android:textSize="@dimen/wining_count_text_size"
-                android:gravity="center_horizontal"/>
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -173,7 +174,8 @@
                 android:layout_above="@id/circle_right"
                 android:layout_centerHorizontal="true"
                 android:textSize="@dimen/wining_count_text_size"
-                android:gravity="center_horizontal"/>
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"/>
         </RelativeLayout>
     </LinearLayout>
 

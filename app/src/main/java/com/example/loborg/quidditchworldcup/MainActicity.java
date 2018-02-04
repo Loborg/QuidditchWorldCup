@@ -40,6 +40,7 @@ import android.widget.TextView;
 
 public class MainActicity extends AppCompatActivity {
 
+    public static final String SNICH_CLICKED_KEY = "snich_clicked_key";
     /**
      * Declaring the important global variables for the program
      */
@@ -71,6 +72,10 @@ public class MainActicity extends AppCompatActivity {
         displayGameInSeasonCount(gameInSeason_counter);
         displayWiningCountA(win_countA);
         displayWiningCountB(win_countB);
+
+        wining_messageA = findViewById(R.id.wining_messageA);
+        wining_messageB = findViewById(R.id.wining_messageB);
+        already_win_massage = findViewById(R.id.already_win_message);
     }
     /**
      * This method will restore the variables,<br>
@@ -78,7 +83,7 @@ public class MainActicity extends AppCompatActivity {
      */
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        snich_clicked = savedInstanceState.getBoolean("snich_clicked_key");
+        snich_clicked = savedInstanceState.getBoolean(SNICH_CLICKED_KEY);
         pointsA = savedInstanceState.getInt("pointsA_key");
         displayPointA(pointsA);
         pointsB = savedInstanceState.getInt("pointsB_key");
@@ -99,7 +104,7 @@ public class MainActicity extends AppCompatActivity {
      */
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
-        savedInstanceState.putBoolean("snich_clicked_key", snich_clicked);
+        savedInstanceState.putBoolean(SNICH_CLICKED_KEY, snich_clicked);
         savedInstanceState.putInt("pointsA_key", pointsA);
         savedInstanceState.putInt("pointsB_key", pointsB);
         savedInstanceState.putInt("win_countA_key", win_countA);

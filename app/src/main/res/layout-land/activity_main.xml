@@ -54,7 +54,8 @@
                 android:layout_height="@dimen/circle_size_land"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                app:srcCompat="@drawable/circle_1" />
+                app:srcCompat="@drawable/circle_1"
+                android:layout_below="@id/win_countA"/>
 
             <TextView
                 android:id="@+id/pointsA"
@@ -63,16 +64,16 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:textSize="@dimen/points_count_text_size_land"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:paddingTop="10dp"/>
 
             <TextView
                 android:id="@+id/win_countA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/circle_left"
                 android:layout_centerHorizontal="true"
                 android:textSize="@dimen/wining_count_text_size_land"
-                android:gravity="center_horizontal"/>
+                android:gravity="center_horizontal" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -155,7 +156,8 @@
                 android:layout_height="@dimen/circle_size_land"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                app:srcCompat="@drawable/circle_3" />
+                app:srcCompat="@drawable/circle_3"
+                android:layout_below="@id/win_countB"/>
 
             <TextView
                 android:id="@+id/pointsB"
@@ -164,13 +166,13 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:textSize="@dimen/points_count_text_size_land"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:paddingTop="10dp"/>
 
             <TextView
                 android:id="@+id/win_countB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_above="@id/circle_right"
                 android:layout_centerHorizontal="true"
                 android:textSize="@dimen/wining_count_text_size_land"
                 android:gravity="center_horizontal"/>
