@@ -26,3 +26,7 @@ This game app is based on J.K. Rowling’s fictional sport game Quidditch which 
      <li>Because the snich color is yellow, sometimes it can be hard to see it on the screen.<br>
      I can’t find a perfect background to solve the issue.</li>
  </ul>
+ 
+ ![QWC](https://image.prntscr.com/image/RODRYQ6NToufjYPDD-Gu6g.png)
+ 
+ ![QWC](https://image.prntscr.com/image/HxNb5r5rQbKMBclPUslUpg.png)
