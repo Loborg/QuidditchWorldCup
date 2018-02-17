@@ -5,27 +5,25 @@
     android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_02_2_land"
     android:orientation="vertical"
-    tools:context="com.example.loborg.quidditchworldcup.MainActicity"
-    android:background="@drawable/bg_02_2_land">
+    tools:context="com.example.loborg.quidditchworldcup.MainActicity">
 
     <LinearLayout
         android:id="@+id/season_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_weight="0"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/season_counter"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:textSize="@dimen/season_count_text_size_land" />
+            android:textSize="@dimen/season_count_text_size_land"
+            tools:ignore="NestedWeights" />
     </LinearLayout>
 
     <LinearLayout
@@ -39,7 +37,8 @@
             android:id="@+id/circle1_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
 
             <View
                 android:layout_width="1dp"
@@ -52,10 +51,10 @@
                 android:id="@+id/circle_left"
                 android:layout_width="@dimen/circle_size_land"
                 android:layout_height="@dimen/circle_size_land"
+                android:layout_below="@id/win_countA"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                app:srcCompat="@drawable/circle_1"
-                android:layout_below="@id/win_countA"/>
+                app:srcCompat="@drawable/circle_1" />
 
             <TextView
                 android:id="@+id/pointsA"
@@ -63,26 +62,23 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:paddingTop="10dp"
                 android:textSize="@dimen/points_count_text_size_land"
-                android:textStyle="bold"
-                android:paddingTop="10dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/win_countA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:textSize="@dimen/wining_count_text_size_land"
-                android:gravity="center_horizontal" />
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/wining_count_text_size_land" />
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/circle2_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
             android:layout_weight="1">
 
             <ImageView
@@ -130,17 +126,13 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
-                android:textSize="@dimen/game_count_text_size_land"/>
-
+                android:textSize="@dimen/game_count_text_size_land" />
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/circle3_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_weight="1">
 
             <View
@@ -154,10 +146,10 @@
                 android:id="@+id/circle_right"
                 android:layout_width="@dimen/circle_size_land"
                 android:layout_height="@dimen/circle_size_land"
+                android:layout_below="@id/win_countB"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                app:srcCompat="@drawable/circle_3"
-                android:layout_below="@id/win_countB"/>
+                app:srcCompat="@drawable/circle_3" />
 
             <TextView
                 android:id="@+id/pointsB"
@@ -165,17 +157,17 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:paddingTop="10dp"
                 android:textSize="@dimen/points_count_text_size_land"
-                android:textStyle="bold"
-                android:paddingTop="10dp"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/win_countB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:textSize="@dimen/wining_count_text_size_land"
-                android:gravity="center_horizontal"/>
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/wining_count_text_size_land" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -190,7 +182,8 @@
             android:id="@+id/quaffleA_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
 
             <View
                 android:layout_width="1dp"
@@ -207,7 +200,6 @@
                 android:layout_centerVertical="true"
                 android:onClick="quaffleA_clicked"
                 app:srcCompat="@drawable/quaffle" />
-
         </RelativeLayout>
 
         <LinearLayout
@@ -222,7 +214,6 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:background="@color/lines" />
-
         </LinearLayout>
 
         <RelativeLayout
@@ -269,10 +260,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="@string/teamA_winning_message"
-            android:visibility="gone"
             android:layout_marginBottom="@dimen/feedback_message_margin"
-            android:textSize="@dimen/feedback_massage_text_size_land"/>
+            android:text="@string/teamA_winning_message"
+            android:textSize="@dimen/feedback_massage_text_size_land"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/wining_messageB"
@@ -281,18 +272,17 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="@dimen/feedback_message_margin"
             android:text="@string/teamB_winning_message"
-            android:visibility="gone"
-            android:textSize="@dimen/feedback_massage_text_size_land"/>
+            android:textSize="@dimen/feedback_massage_text_size_land"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/already_win_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="@string/already_win_message"
-            android:visibility="gone"
             android:layout_marginBottom="@dimen/feedback_message_margin_land"
-            android:textSize="@dimen/feedback_massage_text_size_land"/>
+            android:text="@string/already_win_message"
+            android:textSize="@dimen/feedback_massage_text_size_land"
+            android:visibility="gone" />
     </LinearLayout>
-
 </LinearLayout>

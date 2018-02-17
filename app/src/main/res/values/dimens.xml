@@ -17,6 +17,6 @@
     <dimen name="circle_size_land">64dp</dimen>
     <dimen name="quaffle_size_land">56dp</dimen>
     <dimen name="feedback_message_margin_land">4dp</dimen>
-    <dimen name="feedback_massage_text_size_land">8dp</dimen>
+    <dimen name="feedback_massage_text_size_land">8sp</dimen>
 
 </resources>
