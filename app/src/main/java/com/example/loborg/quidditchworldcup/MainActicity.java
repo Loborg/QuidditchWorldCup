@@ -40,6 +40,15 @@ import android.widget.TextView;
 public class MainActicity extends AppCompatActivity {
 
     public static final String SNICH_CLICKED_KEY = "snich_clicked_key";
+    public static final String POINTS_A_KEY = "pointsA_key";
+    public static final String POINTS_B_KEY = "pointsB_key";
+    public static final String WIN_COUNT_A_KEY = "win_countA_key";
+    public static final String WIN_COUNT_B_KEY = "win_countB_key";
+    public static final String SEASON_COUNT_KEY = "season_count_key";
+    public static final String GAME_IN_SEASON_COUNTER_KEY = "gameInSeason_counter_key";
+    public static final String WINING_MESSAGE_A_KEY = "wining_messageA_key";
+    public static final String WINING_MESSAGE_B_KEY = "wining_messageB_key";
+    public static final String ALREADY_WIN_MASSAGE_KEY = "already_win_massage_key";
     /**
      * Declaring the important global variables for the program
      */
@@ -84,19 +93,19 @@ public class MainActicity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         snich_clicked = savedInstanceState.getBoolean(SNICH_CLICKED_KEY);
-        pointsA = savedInstanceState.getInt("pointsA_key");
+        pointsA = savedInstanceState.getInt(POINTS_A_KEY);
         displayPointA(pointsA);
-        pointsB = savedInstanceState.getInt("pointsB_key");
+        pointsB = savedInstanceState.getInt(POINTS_B_KEY);
         displayPointB(pointsB);
-        win_countA = savedInstanceState.getInt("win_countA_key");
+        win_countA = savedInstanceState.getInt(WIN_COUNT_A_KEY);
         displayWiningCountA(win_countA);
-        win_countB = savedInstanceState.getInt("win_countB_key");
+        win_countB = savedInstanceState.getInt(WIN_COUNT_B_KEY);
         displayWiningCountB(win_countB);
-        season_count = savedInstanceState.getInt("season_count_key");
+        season_count = savedInstanceState.getInt(SEASON_COUNT_KEY);
         displaySeasonCount(season_count);
-        gameInSeason_counter = savedInstanceState.getInt("gameInSeason_counter_key");
+        gameInSeason_counter = savedInstanceState.getInt(GAME_IN_SEASON_COUNTER_KEY);
         displayGameInSeasonCount(gameInSeason_counter);
-        displayFeedbackMassages(savedInstanceState.getInt("wining_messageA_key"), savedInstanceState.getInt("wining_messageB_key"), savedInstanceState.getInt("already_win_massage_key"));
+        displayFeedbackMassages(savedInstanceState.getInt(WINING_MESSAGE_A_KEY), savedInstanceState.getInt(WINING_MESSAGE_B_KEY), savedInstanceState.getInt(ALREADY_WIN_MASSAGE_KEY));
     }
 
     /**
@@ -106,15 +115,15 @@ public class MainActicity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         savedInstanceState.putBoolean(SNICH_CLICKED_KEY, snich_clicked);
-        savedInstanceState.putInt("pointsA_key", pointsA);
-        savedInstanceState.putInt("pointsB_key", pointsB);
-        savedInstanceState.putInt("win_countA_key", win_countA);
-        savedInstanceState.putInt("win_countB_key", win_countB);
-        savedInstanceState.putInt("season_count_key", season_count);
-        savedInstanceState.putInt("gameInSeason_counter_key", gameInSeason_counter);
-        savedInstanceState.putInt("wining_messageA_key", wining_messageA.getVisibility());
-        savedInstanceState.putInt("wining_messageB_key", wining_messageB.getVisibility());
-        savedInstanceState.putInt("already_win_massage_key", already_win_massage.getVisibility());
+        savedInstanceState.putInt(POINTS_A_KEY, pointsA);
+        savedInstanceState.putInt(POINTS_B_KEY, pointsB);
+        savedInstanceState.putInt(WIN_COUNT_A_KEY, win_countA);
+        savedInstanceState.putInt(WIN_COUNT_B_KEY, win_countB);
+        savedInstanceState.putInt(SEASON_COUNT_KEY, season_count);
+        savedInstanceState.putInt(GAME_IN_SEASON_COUNTER_KEY, gameInSeason_counter);
+        savedInstanceState.putInt(WINING_MESSAGE_A_KEY, wining_messageA.getVisibility());
+        savedInstanceState.putInt(WINING_MESSAGE_B_KEY, wining_messageB.getVisibility());
+        savedInstanceState.putInt(ALREADY_WIN_MASSAGE_KEY, already_win_massage.getVisibility());
         super.onSaveInstanceState(savedInstanceState);
     }
 
@@ -214,7 +223,7 @@ public class MainActicity extends AppCompatActivity {
      */
     public void quaffleA_clicked(View v) {
         if (!snich_clicked) {
-            pointsA = pointsA + 10;
+            pointsA += 10;
             displayPointA(pointsA);
         } else {
             pointsA = 10;
@@ -240,7 +249,7 @@ public class MainActicity extends AppCompatActivity {
      */
     public void quaffleB_clicked(View v) {
         if (!snich_clicked) {
-            pointsB = pointsB + 10;
+            pointsB += 10;
             displayPointB(pointsB);
         } else {
             pointsB = 10;
@@ -265,7 +274,7 @@ public class MainActicity extends AppCompatActivity {
      */
     public void snichA_clicked(View v) {
         if (!snich_clicked) {
-            pointsA = pointsA + 150;
+            pointsA += 150;
             displayPointA(pointsA);
         }
 
@@ -295,7 +304,7 @@ public class MainActicity extends AppCompatActivity {
      */
     public void snichB_clicked(View v) {
         if (!snich_clicked) {
-            pointsB = pointsB + 150;
+            pointsB += 150;
             displayPointB(pointsB);
         }
 
